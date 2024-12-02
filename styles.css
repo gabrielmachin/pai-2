@@ -1,0 +1,204 @@
+body {
+  font-family:'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 40px;
+  z-index: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header > a {
+  text-decoration: none;
+  color: black;
+}
+
+div#inicio {
+  background-color: magenta;
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes inicioAnimation {
+  0% {
+    background-color: magenta;
+  }
+  50% {
+    background-color: aqua;
+  }
+}
+
+div#inicio:hover {
+  animation: inicioAnimation 5s ease-in-out infinite;
+  animation-play-state: running;
+  
+}
+
+div#shake {
+  height: 100vh;
+  width: 100%;
+}
+
+div#transicion {
+  height: 100vh;
+  width: 100%;
+}
+
+div#accion {
+  height: 100vh;
+  width: 100%;
+}
+
+div#contacto {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+div > * {
+  width: 50%;
+}
+
+.shakeSection {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 30%;
+  text-align: center;
+}
+
+@keyframes shake-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shakeContainer {
+  width: 100%;
+  height: 30%;
+  background-color: yellow;
+}
+
+.shakeContainer:hover {
+  animation: shake-horizontal 5s infinite;
+  animation-play-state: running;
+}
+
+@keyframes shake-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nodContainer {
+  width: 100%;
+  height: 30%;
+  background-color: blue;
+}
+
+.nodContainer:hover {
+  animation: shake-vertical 5s infinite;
+  animation-play-state: running;
+}
+
+@keyframes transition {
+  0% {
+    width: 50%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.transicionContainer {
+  width: 50%;
+  height: 40%;
+  background-color: red;
+}
+
+.transicionContainer:hover {
+  animation: transition 20s infinite;
+  animation-play-state: running;
+}
+
+@keyframes accionAnimation {
+  0% {
+    left: 0%;
+    top: 0%;
+    background-color: blue;
+  }
+  25% {
+    left: 100%;
+    top: 0%;
+    background-color: red;
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+    background-color: green;
+  }
+  75% {
+    left: 0;
+    top: 100%;
+    background-color: yellow;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: blue;
+  }
+}
+
+.accionContainer {
+  width: 50%;
+  height: 30%;
+  background: lime;
+  position: relative;
+}
+

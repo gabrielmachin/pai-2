@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function startActionAnimation() {
+        const boxAction = document.querySelector(".accionContainer");
+        boxAction.style.animation = "accionAnimation 5s infinite";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="#inicio">
+        Inicio
+      </a>
+      <a href="#shake">
+        Shake
+      </a>
+      <a href="#transicion">
+        Transición
+      </a>
+      <a href="#accion">
+        Acción
+      </a>
+      <a href="#contacto">
+        Contacto
+      </a>
+    </header>
+    <div id="inicio">
+    </div>
+    <div id="shake">
+      <h2>SHAKE</h2>
+      <div class="shakeSection">
+        <div class="boxContainer">
+          <div class="shakeContainer">
+          </div>
+          <p>Este elemento amarillo dice que no</p>
+        </div>
+        <div class="boxContainer">
+          <div class="nodContainer">
+          </div>
+          <p>Este elemento azul dice que si</p>
+        </div>
+      </div>
+    </div>
+    <div id="transicion">
+      <h2>Transición</h2>
+      <div class="transicionContainer">
+      </div>
+      <p>Pase el mouse sobre este objeto y crecerá del 50% al 100% en 10 segundos.</p>
+    </div>
+    <div id="accion">
+      <h2>ACCION</h2>
+      <div class="accionContainer" onclick="startActionAnimation()">
+      </div>
+    </div>
+    <div id="contacto">
+      <form>
+        <h2>Contacto</h2>
+        <div>
+          <p>Nombre</p>
+          <input type="text" name="nombre" id="formNombre">
+        </div>
+        <div>
+          <p>Email</p>
+          <input type="email" name="email" id="formEmail">
+        </div>
+        <div>
+          <p>Comentario</p>
+          <input type="text" name="comentario" id="formComentario">
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.8656041739787!2d-56.166488223491385!3d-34.909822073729984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a69a5e9493%3A0x3e14212c3c5e8b2d!2sFacultad%20de%20Arquitectura%2C%20Dise%C3%B1o%20y%20Urbanismo!5e0!3m2!1ses-419!2suy!4v1733098059239!5m2!1ses-419!2suy"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer>
+      <a href="http://www.fadu.edu.uy/pai-ii/" target="_blank">Gabriel Machin | PAI 2</a>
+    </footer>
+  </body>
+</html>
